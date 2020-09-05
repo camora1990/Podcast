@@ -1,0 +1,25 @@
+.themes{
+  h2{
+    font-size: $font-subtitle-desktop;
+    margin: 64px 0px 56px 200px;
+  }
+  &__images-container{
+    @include display-grid;
+    @include grid-template-columns(repeat(4, 260px ));
+    justify-content: center;
+    text-align: center;
+    &--images{
+      img{
+        width: 104px;
+        height: 104px;
+        margin-bottom: 29px;
+      }
+      h3{
+        margin: 0;
+        font-size: 1.5em;
+        width: 220px;
+        height: 32px;
+      }
+    }
+  }
+}
