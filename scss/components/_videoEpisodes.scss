@@ -1,0 +1,18 @@
+.container-home {
+  &__video {
+    width: 100%;
+    height: 1042.6px;
+    @include gradient;
+    .clip-path-up {
+      background-color: $color-claro;
+      width: 100%;
+      height: 160px;
+      clip-path: polygon(100% 0, 0 0, 0 100%);
+    }
+    h1 {
+      margin: 26px 0 26px 200px;
+      color: $color-claro;
+      font-size: $font-subtitle-desktop;
+    }
+  }
+}
