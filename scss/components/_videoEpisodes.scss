@@ -3,12 +3,6 @@
     width: 100%;
     height: 1042.6px;
     @include gradient;
-    .clip-path-up {
-      background-color: $color-claro;
-      width: 100%;
-      height: 160px;
-      clip-path: polygon(100% 0, 0 0, 0 100%);
-    }
     h2 {
       margin: 26px 0 26px 200px;
       color: $color-claro;
@@ -40,11 +34,18 @@
     }
     .clip-path-dowm {
       background-color: $color-claro;
-      width: 100%;
-      height: 159px;
+      width: 101%;
+      height: 160.5px;
       clip-path: polygon(100% 100%, 100% 0, 0 100%);
+      
     }
   }
+}
+.clip-path-up {
+  background-color: $color-claro;
+  width: 100%;
+  height: 160px;
+  clip-path: polygon(100% 0, 0 0, 0 100%);
 }
 
 
@@ -60,9 +61,7 @@
         line-height: 42px;
         font-size: $font-subtitle-mobile;
       }
-      .clip-path-up, .clip-path-dowm {
-        height: 40px;
-      }
+
     
       .grid-media{
         width: 298px;
@@ -88,6 +87,9 @@
         background-image: url('/img/embed1_.png');
         
       }
+    }
+    .clip-path-up, .clip-path-dowm {
+      height: 40px;
     }
     
   }

@@ -1,0 +1,26 @@
+.news {
+  width: 100%;
+  height: 518px;
+  @include gradient;
+  margin-top: 34px;
+  text-align: center;
+  h2{
+    
+    height: 62px;
+    margin: 53px auto;
+    margin-bottom: 36px;
+    font-size: $font-subtitle-desktop;
+    color: $color-claro;
+  }
+  &__btn{
+    width: 345px;
+    height: 56px;
+    background-color: $color-button;
+    color: $color-font;
+    font-size: $font-medium-desktop;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    border:none
+  }
+}
