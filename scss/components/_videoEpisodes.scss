@@ -16,26 +16,10 @@
       @include grid-template-rows(repeat(2, 232px));
       grid-gap: 72px;
       margin-bottom: 72.6px;
-    }
-    .grid-media__item1 iframe{
-      width: 100%;
-      height: 100%;
-      // background-image: url('/img/embed1.png');
-    }
-    .grid-media__item2 iframe{
-      // background-image: url('/img/embed2.png');
-      width: 100%;
-      height: 100%;
-    }
-    .grid-media__item3 iframe{
-      // background-image: url('/img/embed3.png');
-      width: 100%;
-      height: 100%;
-    }
-    .grid-media__item4 iframe{
-      // background-image: url('/img/embed4.png');
-      width: 100%;
-      height: 100%;
+      iframe{
+        width: 100%;
+        height: 100%;
+      }
     }
     .clip-path-dowm {
       position: relative;
@@ -84,21 +68,6 @@
         grid-gap: 0;
         grid-row-gap: 11px;
         margin-bottom: 103.5px;
-      }
-      .grid-media__item1{
-        background-image: url('/img/embed1_.png');
-      }
-      .grid-media__item2{
-        background-image: url('/img/embed2_.png');
-        
-      }
-      .grid-media__item3{
-        background-image: url('/img/embed3_.png');
-        
-      }
-      .grid-media__item4{
-        background-image: url('/img/embed1_.png');
-        
       }
     }
     .clip-path-up{
