@@ -32,6 +32,14 @@
       text-transform: uppercase;
       line-height: 28px;
     }
+    a:hover{
+      color: $color-button;
+      text-decoration-line: line-through;
+    }
+    a:active{
+      color: #060A24 56%;
+      text-decoration-line: line-through;
+    }
   }
 }
 

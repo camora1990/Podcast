@@ -3,6 +3,9 @@
   h2 {
     margin: 64px 0 36px 200px;
     font-size: $font-subtitle-desktop;
+    font-family: $font-family-title;
+    font-weight: 400;
+
   }
   &__container {
     width: 100%;
@@ -12,7 +15,8 @@
     &--imagen {
       img {
         width: 100%;
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
       }
     }
   }
@@ -24,6 +28,8 @@
       margin: 54px 16px 14px 16px;
       font-size: $font-subtitle-mobile;
       line-height: 42px;
+    font-family: $font-family-title;
+
     }
     &__container {
       width: 100%;

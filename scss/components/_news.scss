@@ -4,23 +4,50 @@
   @include gradient;
   margin-top: 34px;
   text-align: center;
-  h2{
-    
+  h2 {
     height: 62px;
     margin: 53px auto;
     margin-bottom: 36px;
     font-size: $font-subtitle-desktop;
     color: $color-claro;
+    font-family: $font-family-title;
+    font-weight: 400;
   }
-  &__btn{
+  &__btn {
     width: 345px;
     height: 56px;
     background-color: $color-button;
+    font-weight: 500;
     color: $color-font;
     font-size: $font-medium-desktop;
     outline: none;
     cursor: pointer;
-    font-weight: bold;
-    border:none
+    border: none;
   }
+  &__btn:hover {
+    @include gradient-hover-button;
+    color: $color-claro;
+  }
+}
+
+@include media(mobile){
+  .news {
+    margin-top: 42px;
+    height: 341px;
+    h2{
+      margin-top: 24px;
+      margin-bottom: 36px;
+      font-size: $font-title-mobile;
+      width: 288px;
+      height: 126px;
+      line-height: 42px;
+    }
+    &__btn {
+      width: 288px;
+      height: 48px;
+      font-size: $font-medium-mobile;
+      line-height: 22px;
+    }
+  }
+
 }

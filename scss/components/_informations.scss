@@ -6,9 +6,12 @@
     h1{
       margin: 0;
       font-size: $font-title-desktop;
+      font-family: $font-family-title;
+      font-weight: 400;
     }
     .line-through{
-      text-decoration-line: line-through;
+      -webkit-text-decoration-line: line-through;
+              text-decoration-line: line-through;
     }
     .point{
       color: $color-primary;
@@ -22,13 +25,17 @@
       width: 226px;
       height: 56px;
       font-size: $font-medium-desktop;
+      font-weight: 500;
       text-transform: uppercase;
       border: none;
       background-color: $color-button;
       outline: none;
       cursor: pointer;
-      font-weight: bold;
       margin-top: 56px;
+    }
+    &--btn:hover{
+      @include gradient-hover-button;
+      color:$color-claro;
     }
   }
 }
@@ -41,6 +48,7 @@
       // margin-left: 16px;
       h1{
         font-size: $font-title-mobile;
+        line-height: 42px;
       }
       p{
         margin-top: 16px;

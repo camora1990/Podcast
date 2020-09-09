@@ -64,6 +64,16 @@ body {
   text-transform: uppercase;
   line-height: 28px;
 }
+.nav--header li a:hover {
+  color: #00F3BB;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+}
+.nav--header li a:active {
+  color: #060A24 56%;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+}
 
 @media only screen and (max-width: 320px) {
   .header {
@@ -118,10 +128,12 @@ body {
 .container-home__information h1 {
   margin: 0;
   font-size: 4em;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
 }
 .container-home__information .line-through {
   -webkit-text-decoration-line: line-through;
-          text-decoration-line: line-through;
+  text-decoration-line: line-through;
 }
 .container-home__information .point {
   color: #0000EC;
@@ -135,13 +147,17 @@ body {
   width: 226px;
   height: 56px;
   font-size: 1.125em;
+  font-weight: 500;
   text-transform: uppercase;
   border: none;
   background-color: #00F3BB;
   outline: none;
   cursor: pointer;
-  font-weight: bold;
   margin-top: 56px;
+}
+.container-home__information--btn:hover {
+  background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+  color: #ffff;
 }
 
 @media only screen and (max-width: 320px) {
@@ -150,6 +166,7 @@ body {
   }
   .container-home__information h1 {
     font-size: 2.25em;
+    line-height: 42px;
   }
   .container-home__information p {
     margin-top: 16px;
@@ -173,6 +190,7 @@ body {
   margin: 26px 0 26px 200px;
   color: #ffff;
   font-size: 3em;
+  font-weight: 400;
 }
 .container-home__video .grid-media {
   width: 1240px;
@@ -184,8 +202,8 @@ body {
   margin-bottom: 72.6px;
 }
 .container-home__video .grid-media iframe {
-  width: 100%;
-  height: 100%;
+  width: 584px;
+  height: 232px;
 }
 .container-home__video .clip-path-dowm {
   position: relative;
@@ -193,7 +211,7 @@ body {
   width: 100%;
   height: 160.5px;
   -webkit-clip-path: polygon(100% 100%, 101% 0, 0 100%);
-          clip-path: polygon(100% 100%, 101% 0, 0 100%);
+  clip-path: polygon(100% 100%, 101% 0, 0 100%);
   display: block;
   background-image: #ffff;
 }
@@ -204,7 +222,7 @@ body {
   width: 100%;
   height: 160.5px;
   -webkit-clip-path: polygon(100% 0, 0 0, 0 100%);
-          clip-path: polygon(100% 0, 0 0, 0 100%);
+  clip-path: polygon(100% 0, 0 0, 0 100%);
   display: block;
 }
 
@@ -228,6 +246,10 @@ body {
     grid-gap: 0;
     grid-row-gap: 11px;
     margin-bottom: 103.5px;
+  }
+  .container-home__video .grid-media iframe {
+    width: 298px;
+    height: 225px;
   }
   .container-home .clip-path-up {
     height: 40px;
@@ -259,6 +281,8 @@ body {
 .article-introduction__description h2 {
   margin: 20.4px 0 24px 0;
   font-size: 3em;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
 }
 .article-introduction__description p {
   margin: 0;
@@ -306,6 +330,8 @@ body {
 .guest h2 {
   margin: 64px 0 36px 200px;
   font-size: 3em;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
 }
 .guest__container {
   width: 100%;
@@ -323,6 +349,7 @@ body {
     margin: 54px 16px 14px 16px;
     font-size: 2.25em;
     line-height: 42px;
+    font-family: "IBM Plex Sans", sans-serif;
   }
   .guest__container {
     width: 100%;
@@ -334,6 +361,8 @@ body {
 .themes h2 {
   font-size: 3em;
   margin: 64px 0px 56px 200px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
 }
 .themes__images-container {
   height: auto;
@@ -357,6 +386,8 @@ body {
   font-size: 1.5em;
   width: 220px;
   height: 32px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 600;
 }
 
 @media only screen and (max-width: 320px) {
@@ -365,7 +396,7 @@ body {
     height: 84px;
     margin: 0 auto;
     margin-top: 48px;
-    font-size: 30px;
+    font-size: 36px;
     line-height: 42px;
   }
   .themes__images-container {
@@ -374,10 +405,10 @@ body {
     grid-template-rows: repeat(4, auto);
     grid-row-gap: 36px;
   }
-  .themes--images img {
+  .themes__images-container--images img {
     margin-bottom: 0;
   }
-  .themes--images h3 {
+  .themes__images-container--images h3 {
     width: 288px;
     margin: 13px auto;
     margin-bottom: 0;
@@ -397,15 +428,42 @@ body {
   margin-bottom: 36px;
   font-size: 3em;
   color: #ffff;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
 }
 .news__btn {
   width: 345px;
   height: 56px;
   background-color: #00F3BB;
+  font-weight: 500;
   color: #060A24;
   font-size: 1.125em;
   outline: none;
   cursor: pointer;
-  font-weight: bold;
   border: none;
+}
+.news__btn:hover {
+  background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+  color: #ffff;
+}
+
+@media only screen and (max-width: 320px) {
+  .news {
+    margin-top: 42px;
+    height: 341px;
+  }
+  .news h2 {
+    margin-top: 24px;
+    margin-bottom: 36px;
+    font-size: 2.25em;
+    width: 288px;
+    height: 126px;
+    line-height: 42px;
+  }
+  .news__btn {
+    width: 288px;
+    height: 48px;
+    font-size: 1em;
+    line-height: 22px;
+  }
 }
