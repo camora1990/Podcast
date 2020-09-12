@@ -7,7 +7,10 @@
       src="https://kit.fontawesome.com/90cf718084.js"
       crossorigin="anonymous"
     ></script>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;500&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;500&family=IBM+Plex+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="css/style.css" />
     <title>Podcast</title>
@@ -17,14 +20,14 @@
       <header class="header">
         <div class="logo">
           <img src="img/logo.svg" alt="logo" />
-          <i class="fas fa-bars"></i>
+          <i id="icono" class="fas fa-bars"></i>
         </div>
         <nav class="nav--header">
           <ul>
-            <li><a href="#">episodios</a></li>
-            <li><a href="#">nosotros</a></li>
-            <li><a href="#">entrevistas</a></li>
-            <li><a href="#">tópicos</a></li>
+            <li><a href="#episodios">episodios</a></li>
+            <li><a href="#introduction">nosotros</a></li>
+            <li><a href="#guests">entrevistas</a></li>
+            <li><a href="#themes">tópicos</a></li>
           </ul>
         </nav>
       </header>
@@ -43,7 +46,7 @@
           <button class="container-home__information--btn">conocé más</button>
         </section>
 
-        <section class="container-home__video">
+        <section class="container-home__video" id="episodios">
           <div class="container-home__video--clip-path"></div>
           <h2>Episodios</h2>
           <div class="grid-media">
@@ -82,7 +85,7 @@
           </div>
         </section>
 
-        <section class="article-introduction">
+        <section class="article-introduction" id="introduction">
           <div class="container-imagen">
             <img src="img/phone.png" alt="img phone" />
           </div>
@@ -99,7 +102,7 @@
           </article>
         </section>
 
-        <section class="guest">
+        <section class="guest" id="guests">
           <h2>Invitadas/os estelares</h2>
           <div class="guest__container">
             <div class="guest__container--imagen">
@@ -129,7 +132,7 @@
           </div>
         </section>
 
-        <section class="themes">
+        <section class="themes" id="themes">
           <h2>Algunos de nuestros temas</h2>
           <div class="themes__images-container">
             <div class="themes__images-container--images">
@@ -158,17 +161,55 @@
         </section>
       </main>
       <footer class="footer">
-          <p class="footer__description">
-            © 2019— Hello blue pale dot 
-          </p>
-          <ul class="footer__social-media">
-            <li><a href="https://accounts.spotify.com/en/login?continue=https:%2F%2Fwww.spotify.com%2Fco%2Faccount%2Foverview%2F" target="blank"><i class="fab fa-spotify"></i></a></li>
-            <li><a href="https://www.instagram.com/?hl=es-la" target="blank"><i class="fab fa-instagram"></i></a></li>
-            <li><a href="https://twitter.com/?lang=es" target="blank"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="https://es-la.facebook.com/" target="blank"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="https://es-la.facebook.com/" target="blank"><i class="fab fa-telegram-plane"></i></a></li>
-          </ul>
+        <p class="footer__description">© 2019— Hello blue pale dot</p>
+        <ul class="footer__social-media">
+          <li>
+            <a
+              href="https://accounts.spotify.com/en/login?continue=https:%2F%2Fwww.spotify.com%2Fco%2Faccount%2Foverview%2F"
+              target="blank"
+              ><i class="fab fa-spotify"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/?hl=es-la" target="blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/?lang=es" target="blank"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://es-la.facebook.com/" target="blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://es-la.facebook.com/" target="blank"
+              ><i class="fab fa-telegram-plane"></i
+            ></a>
+          </li>
+        </ul>
       </footer>
     </div>
+    <script>
+      const mobile = window.matchMedia("screen and (max-width: 320px)");
+      var nav = document.querySelector(".nav--header");
+
+      if (mobile.matches) {
+        var icono = document.getElementById("icono");
+        icono.addEventListener("click", function () {
+          icono.classList.toggle("fa-times");
+          if (document.querySelector(".fa-times")) {
+            nav.style.display = "block";
+          } else {
+            nav.style.display = "none";
+          }
+        });
+      }else{
+        nav.style.display = "block"
+      }
+    </script>
   </body>
 </html>
