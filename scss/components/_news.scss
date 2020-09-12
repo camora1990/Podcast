@@ -1,12 +1,22 @@
 .news {
+  position: relative;
   width: 100%;
   height: 518px;
-  @include gradient;
   margin-top: 34px;
   text-align: center;
+  padding-top: 213px;
+  &__clip-path{
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    @include gradient;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(100% 0 , 100% 100% , 0 100%, 0 15%);
+  }
   h2 {
     height: 62px;
-    margin: 53px auto;
+    margin: 0 auto;
     margin-bottom: 36px;
     font-size: $font-subtitle-desktop;
     color: $color-claro;
@@ -33,10 +43,12 @@
 @include media(mobile){
   .news {
     margin-top: 42px;
+    padding-top: 64px;
     height: 341px;
+    &__clip-path{
+      clip-path: polygon(100% 0 , 100% 100% , 0 100%, 0 12%);
+    }
     h2{
-      margin-top: 24px;
-      margin-bottom: 36px;
       font-size: $font-title-mobile;
       width: 288px;
       height: 126px;
