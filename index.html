@@ -201,14 +201,9 @@
         var icono = document.getElementById("icono");
         icono.addEventListener("click", function () {
           icono.classList.toggle("fa-times");
-          if (document.querySelector(".fa-times")) {
-            nav.style.display = "block";
-          } else {
-            nav.style.display = "none";
-          }
+          nav.classList.toggle("show")
+          
         });
-      }else{
-        nav.style.display = "block"
       }
     </script>
   </body>

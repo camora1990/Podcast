@@ -20,7 +20,7 @@
   margin-right: 52px;
   li {
     display: inline-block;
-    width: 87px;
+    // width: 87px;
     height: 28px;
     margin-right: 48px;
     a {
@@ -91,6 +91,9 @@
         height: 12px;
         color: black;
       }
+    }
+    .show{
+      display: block;
     }
   }
 }
