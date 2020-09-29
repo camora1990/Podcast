@@ -34,10 +34,7 @@
     cursor: pointer;
     border: none;
   }
-  &__btn:hover {
-    @include gradient-hover-button;
-    color: $color-claro;
-  }
+  
 }
 
 @include media(mobile){
