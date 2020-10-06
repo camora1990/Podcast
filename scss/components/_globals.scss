@@ -2,11 +2,13 @@ html{
   font-size: 100%;
 }
 
+// desktop
 $font-small-desktop: 1em;
 $font-medium-desktop: 1.125em;
 $font-subtitle-desktop: 3em;
 $font-title-desktop: 4em;
 
+// mobile
 $font-small-mobile: .875em;
 $font-medium-mobile: 1em;
 $font-subtitle-mobile: 2.25em;
@@ -29,6 +31,7 @@ body{
   color: $color-font;
   letter-spacing: 0;
   margin: 0;
+  font-weight: 300;
 
 }
 
