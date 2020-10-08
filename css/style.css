@@ -67,7 +67,7 @@ body {
           text-decoration-line: line-through;
 }
 .header .nav--header li a:active {
-  color: #060A24 56%;
+  color: #060A24;
   -webkit-text-decoration-line: line-through;
           text-decoration-line: line-through;
 }
